@@ -1,0 +1,719 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'uninstall',
+1 verbose cli   '-g',
+1 verbose cli   'webpack' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly uninstall loadAllDepsIntoIdealtree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly loadIdealTree Finishing
+21 silly currentTree lib
+21 silly currentTree └─┬ webpack@2.2.1
+21 silly currentTree   ├── acorn-dynamic-import@2.0.2
+21 silly currentTree   ├── acorn@4.0.11
+21 silly currentTree   ├── ajv-keywords@1.5.1
+21 silly currentTree   ├── ajv@4.11.5
+21 silly currentTree   ├── align-text@0.1.4
+21 silly currentTree   ├── ansi-regex@2.1.1
+21 silly currentTree   ├── anymatch@1.3.0
+21 silly currentTree   ├── arr-diff@2.0.0
+21 silly currentTree   ├── arr-flatten@1.0.1
+21 silly currentTree   ├── array-unique@0.2.1
+21 silly currentTree   ├── arrify@1.0.1
+21 silly currentTree   ├── asn1.js@4.9.1
+21 silly currentTree   ├── assert@1.4.1
+21 silly currentTree   ├── async-each@1.0.1
+21 silly currentTree   ├── async@2.1.5
+21 silly currentTree   ├── balanced-match@0.4.2
+21 silly currentTree   ├── base64-js@1.2.0
+21 silly currentTree   ├── big.js@3.1.3
+21 silly currentTree   ├── binary-extensions@1.8.0
+21 silly currentTree   ├── bn.js@4.11.6
+21 silly currentTree   ├── brace-expansion@1.1.6
+21 silly currentTree   ├── braces@1.8.5
+21 silly currentTree   ├── brorand@1.1.0
+21 silly currentTree   ├── browserify-aes@1.0.6
+21 silly currentTree   ├── browserify-cipher@1.0.0
+21 silly currentTree   ├── browserify-des@1.0.0
+21 silly currentTree   ├── browserify-rsa@4.0.1
+21 silly currentTree   ├── browserify-sign@4.0.0
+21 silly currentTree   ├── browserify-zlib@0.1.4
+21 silly currentTree   ├── buffer-shims@1.0.0
+21 silly currentTree   ├── buffer-xor@1.0.3
+21 silly currentTree   ├── buffer@4.9.1
+21 silly currentTree   ├── builtin-modules@1.1.1
+21 silly currentTree   ├── builtin-status-codes@3.0.0
+21 silly currentTree   ├── camelcase@1.2.1
+21 silly currentTree   ├── center-align@0.1.3
+21 silly currentTree   ├── chokidar@1.6.1
+21 silly currentTree   ├── cipher-base@1.0.3
+21 silly currentTree   ├── cliui@2.1.0
+21 silly currentTree   ├── co@4.6.0
+21 silly currentTree   ├── code-point-at@1.1.0
+21 silly currentTree   ├── concat-map@0.0.1
+21 silly currentTree   ├── console-browserify@1.1.0
+21 silly currentTree   ├── constants-browserify@1.0.0
+21 silly currentTree   ├── core-util-is@1.0.2
+21 silly currentTree   ├── create-ecdh@4.0.0
+21 silly currentTree   ├── create-hash@1.1.2
+21 silly currentTree   ├── create-hmac@1.1.4
+21 silly currentTree   ├── crypto-browserify@3.11.0
+21 silly currentTree   ├── date-now@0.1.4
+21 silly currentTree   ├── decamelize@1.2.0
+21 silly currentTree   ├── des.js@1.0.0
+21 silly currentTree   ├── diffie-hellman@5.0.2
+21 silly currentTree   ├── domain-browser@1.1.7
+21 silly currentTree   ├── elliptic@6.4.0
+21 silly currentTree   ├── emojis-list@2.1.0
+21 silly currentTree   ├── enhanced-resolve@3.1.0
+21 silly currentTree   ├── errno@0.1.4
+21 silly currentTree   ├── error-ex@1.3.1
+21 silly currentTree   ├── events@1.1.1
+21 silly currentTree   ├── evp_bytestokey@1.0.0
+21 silly currentTree   ├── expand-brackets@0.1.5
+21 silly currentTree   ├── expand-range@1.8.2
+21 silly currentTree   ├── extglob@0.3.2
+21 silly currentTree   ├── filename-regex@2.0.0
+21 silly currentTree   ├── fill-range@2.2.3
+21 silly currentTree   ├── find-up@1.1.2
+21 silly currentTree   ├── for-in@1.0.2
+21 silly currentTree   ├── for-own@0.1.5
+21 silly currentTree   ├─┬ fsevents@1.1.1
+21 silly currentTree   │ ├── abbrev@1.1.0
+21 silly currentTree   │ ├── ansi-regex@2.1.1
+21 silly currentTree   │ ├── ansi-styles@2.2.1
+21 silly currentTree   │ ├── aproba@1.1.1
+21 silly currentTree   │ ├── are-we-there-yet@1.1.2
+21 silly currentTree   │ ├── asn1@0.2.3
+21 silly currentTree   │ ├── assert-plus@0.2.0
+21 silly currentTree   │ ├── asynckit@0.4.0
+21 silly currentTree   │ ├── aws-sign2@0.6.0
+21 silly currentTree   │ ├── aws4@1.6.0
+21 silly currentTree   │ ├── balanced-match@0.4.2
+21 silly currentTree   │ ├── bcrypt-pbkdf@1.0.1
+21 silly currentTree   │ ├── block-stream@0.0.9
+21 silly currentTree   │ ├── boom@2.10.1
+21 silly currentTree   │ ├── brace-expansion@1.1.6
+21 silly currentTree   │ ├── buffer-shims@1.0.0
+21 silly currentTree   │ ├── caseless@0.11.0
+21 silly currentTree   │ ├── chalk@1.1.3
+21 silly currentTree   │ ├── code-point-at@1.1.0
+21 silly currentTree   │ ├── combined-stream@1.0.5
+21 silly currentTree   │ ├── commander@2.9.0
+21 silly currentTree   │ ├── concat-map@0.0.1
+21 silly currentTree   │ ├── console-control-strings@1.1.0
+21 silly currentTree   │ ├── core-util-is@1.0.2
+21 silly currentTree   │ ├── cryptiles@2.0.5
+21 silly currentTree   │ ├─┬ dashdash@1.14.1
+21 silly currentTree   │ │ └── assert-plus@1.0.0
+21 silly currentTree   │ ├── debug@2.2.0
+21 silly currentTree   │ ├── deep-extend@0.4.1
+21 silly currentTree   │ ├── delayed-stream@1.0.0
+21 silly currentTree   │ ├── delegates@1.0.0
+21 silly currentTree   │ ├── ecc-jsbn@0.1.1
+21 silly currentTree   │ ├── escape-string-regexp@1.0.5
+21 silly currentTree   │ ├── extend@3.0.0
+21 silly currentTree   │ ├── extsprintf@1.0.2
+21 silly currentTree   │ ├── forever-agent@0.6.1
+21 silly currentTree   │ ├── form-data@2.1.2
+21 silly currentTree   │ ├── fs.realpath@1.0.0
+21 silly currentTree   │ ├── fstream-ignore@1.0.5
+21 silly currentTree   │ ├── fstream@1.0.10
+21 silly currentTree   │ ├── gauge@2.7.3
+21 silly currentTree   │ ├── generate-function@2.0.0
+21 silly currentTree   │ ├── generate-object-property@1.2.0
+21 silly currentTree   │ ├─┬ getpass@0.1.6
+21 silly currentTree   │ │ └── assert-plus@1.0.0
+21 silly currentTree   │ ├── glob@7.1.1
+21 silly currentTree   │ ├── graceful-fs@4.1.11
+21 silly currentTree   │ ├── graceful-readlink@1.0.1
+21 silly currentTree   │ ├── har-validator@2.0.6
+21 silly currentTree   │ ├── has-ansi@2.0.0
+21 silly currentTree   │ ├── has-unicode@2.0.1
+21 silly currentTree   │ ├── hawk@3.1.3
+21 silly currentTree   │ ├── hoek@2.16.3
+21 silly currentTree   │ ├── http-signature@1.1.1
+21 silly currentTree   │ ├── inflight@1.0.6
+21 silly currentTree   │ ├── inherits@2.0.3
+21 silly currentTree   │ ├── ini@1.3.4
+21 silly currentTree   │ ├── is-fullwidth-code-point@1.0.0
+21 silly currentTree   │ ├── is-my-json-valid@2.15.0
+21 silly currentTree   │ ├── is-property@1.0.2
+21 silly currentTree   │ ├── is-typedarray@1.0.0
+21 silly currentTree   │ ├── isarray@1.0.0
+21 silly currentTree   │ ├── isstream@0.1.2
+21 silly currentTree   │ ├── jodid25519@1.0.2
+21 silly currentTree   │ ├── jsbn@0.1.1
+21 silly currentTree   │ ├── json-schema@0.2.3
+21 silly currentTree   │ ├── json-stringify-safe@5.0.1
+21 silly currentTree   │ ├── jsonpointer@4.0.1
+21 silly currentTree   │ ├── jsprim@1.3.1
+21 silly currentTree   │ ├── mime-db@1.26.0
+21 silly currentTree   │ ├── mime-types@2.1.14
+21 silly currentTree   │ ├── minimatch@3.0.3
+21 silly currentTree   │ ├── minimist@0.0.8
+21 silly currentTree   │ ├── mkdirp@0.5.1
+21 silly currentTree   │ ├── ms@0.7.1
+21 silly currentTree   │ ├── node-pre-gyp@0.6.33
+21 silly currentTree   │ ├── nopt@3.0.6
+21 silly currentTree   │ ├── npmlog@4.0.2
+21 silly currentTree   │ ├── number-is-nan@1.0.1
+21 silly currentTree   │ ├── oauth-sign@0.8.2
+21 silly currentTree   │ ├── object-assign@4.1.1
+21 silly currentTree   │ ├── once@1.4.0
+21 silly currentTree   │ ├── path-is-absolute@1.0.1
+21 silly currentTree   │ ├── pinkie-promise@2.0.1
+21 silly currentTree   │ ├── pinkie@2.0.4
+21 silly currentTree   │ ├── process-nextick-args@1.0.7
+21 silly currentTree   │ ├── punycode@1.4.1
+21 silly currentTree   │ ├── qs@6.3.1
+21 silly currentTree   │ ├─┬ rc@1.1.7
+21 silly currentTree   │ │ └── minimist@1.2.0
+21 silly currentTree   │ ├── readable-stream@2.2.2
+21 silly currentTree   │ ├── request@2.79.0
+21 silly currentTree   │ ├── rimraf@2.5.4
+21 silly currentTree   │ ├── semver@5.3.0
+21 silly currentTree   │ ├── set-blocking@2.0.0
+21 silly currentTree   │ ├── signal-exit@3.0.2
+21 silly currentTree   │ ├── sntp@1.0.9
+21 silly currentTree   │ ├─┬ sshpk@1.10.2
+21 silly currentTree   │ │ └── assert-plus@1.0.0
+21 silly currentTree   │ ├── string_decoder@0.10.31
+21 silly currentTree   │ ├── string-width@1.0.2
+21 silly currentTree   │ ├── stringstream@0.0.5
+21 silly currentTree   │ ├── strip-ansi@3.0.1
+21 silly currentTree   │ ├── strip-json-comments@2.0.1
+21 silly currentTree   │ ├── supports-color@2.0.0
+21 silly currentTree   │ ├─┬ tar-pack@3.3.0
+21 silly currentTree   │ │ ├── once@1.3.3
+21 silly currentTree   │ │ └── readable-stream@2.1.5
+21 silly currentTree   │ ├── tar@2.2.1
+21 silly currentTree   │ ├── tough-cookie@2.3.2
+21 silly currentTree   │ ├── tunnel-agent@0.4.3
+21 silly currentTree   │ ├── tweetnacl@0.14.5
+21 silly currentTree   │ ├── uid-number@0.0.6
+21 silly currentTree   │ ├── util-deprecate@1.0.2
+21 silly currentTree   │ ├── uuid@3.0.1
+21 silly currentTree   │ ├── verror@1.3.6
+21 silly currentTree   │ ├── wide-align@1.1.0
+21 silly currentTree   │ ├── wrappy@1.0.2
+21 silly currentTree   │ └── xtend@4.0.1
+21 silly currentTree   ├── get-caller-file@1.0.2
+21 silly currentTree   ├── glob-base@0.3.0
+21 silly currentTree   ├── glob-parent@2.0.0
+21 silly currentTree   ├── graceful-fs@4.1.11
+21 silly currentTree   ├── has-flag@1.0.0
+21 silly currentTree   ├── hash.js@1.0.3
+21 silly currentTree   ├── hmac-drbg@1.0.0
+21 silly currentTree   ├── hosted-git-info@2.2.0
+21 silly currentTree   ├── https-browserify@0.0.1
+21 silly currentTree   ├── ieee754@1.1.8
+21 silly currentTree   ├── indexof@0.0.1
+21 silly currentTree   ├── inherits@2.0.3
+21 silly currentTree   ├── interpret@1.0.1
+21 silly currentTree   ├── invert-kv@1.0.0
+21 silly currentTree   ├── is-arrayish@0.2.1
+21 silly currentTree   ├── is-binary-path@1.0.1
+21 silly currentTree   ├── is-buffer@1.1.5
+21 silly currentTree   ├── is-builtin-module@1.0.0
+21 silly currentTree   ├── is-dotfile@1.0.2
+21 silly currentTree   ├── is-equal-shallow@0.1.3
+21 silly currentTree   ├── is-extendable@0.1.1
+21 silly currentTree   ├── is-extglob@1.0.0
+21 silly currentTree   ├── is-fullwidth-code-point@1.0.0
+21 silly currentTree   ├── is-glob@2.0.1
+21 silly currentTree   ├── is-number@2.1.0
+21 silly currentTree   ├── is-posix-bracket@0.1.1
+21 silly currentTree   ├── is-primitive@2.0.0
+21 silly currentTree   ├── is-utf8@0.2.1
+21 silly currentTree   ├── isarray@1.0.0
+21 silly currentTree   ├── isobject@2.1.0
+21 silly currentTree   ├── json-loader@0.5.4
+21 silly currentTree   ├── json-stable-stringify@1.0.1
+21 silly currentTree   ├── json5@0.5.1
+21 silly currentTree   ├── jsonify@0.0.0
+21 silly currentTree   ├── kind-of@3.1.0
+21 silly currentTree   ├── lazy-cache@1.0.4
+21 silly currentTree   ├── lcid@1.0.0
+21 silly currentTree   ├── load-json-file@1.1.0
+21 silly currentTree   ├── loader-runner@2.3.0
+21 silly currentTree   ├── loader-utils@0.2.17
+21 silly currentTree   ├── lodash@4.17.4
+21 silly currentTree   ├── longest@1.0.1
+21 silly currentTree   ├── memory-fs@0.4.1
+21 silly currentTree   ├── micromatch@2.3.11
+21 silly currentTree   ├── miller-rabin@4.0.0
+21 silly currentTree   ├── minimalistic-assert@1.0.0
+21 silly currentTree   ├── minimalistic-crypto-utils@1.0.1
+21 silly currentTree   ├── minimatch@3.0.3
+21 silly currentTree   ├── minimist@0.0.8
+21 silly currentTree   ├── mkdirp@0.5.1
+21 silly currentTree   ├── nan@2.5.1
+21 silly currentTree   ├── node-libs-browser@2.0.0
+21 silly currentTree   ├── normalize-package-data@2.3.6
+21 silly currentTree   ├── normalize-path@2.0.1
+21 silly currentTree   ├── number-is-nan@1.0.1
+21 silly currentTree   ├── object-assign@4.1.1
+21 silly currentTree   ├── object.omit@2.0.1
+21 silly currentTree   ├── os-browserify@0.2.1
+21 silly currentTree   ├── os-locale@1.4.0
+21 silly currentTree   ├── pako@0.2.9
+21 silly currentTree   ├── parse-asn1@5.1.0
+21 silly currentTree   ├── parse-glob@3.0.4
+21 silly currentTree   ├── parse-json@2.2.0
+21 silly currentTree   ├── path-browserify@0.0.0
+21 silly currentTree   ├── path-exists@2.1.0
+21 silly currentTree   ├── path-is-absolute@1.0.1
+21 silly currentTree   ├── path-type@1.1.0
+21 silly currentTree   ├── pbkdf2@3.0.9
+21 silly currentTree   ├── pify@2.3.0
+21 silly currentTree   ├── pinkie-promise@2.0.1
+21 silly currentTree   ├── pinkie@2.0.4
+21 silly currentTree   ├── preserve@0.2.0
+21 silly currentTree   ├── process-nextick-args@1.0.7
+21 silly currentTree   ├── process@0.11.9
+21 silly currentTree   ├── prr@0.0.0
+21 silly currentTree   ├── public-encrypt@4.0.0
+21 silly currentTree   ├── punycode@1.4.1
+21 silly currentTree   ├── querystring-es3@0.2.1
+21 silly currentTree   ├── querystring@0.2.0
+21 silly currentTree   ├── randomatic@1.1.6
+21 silly currentTree   ├── randombytes@2.0.3
+21 silly currentTree   ├── read-pkg-up@1.0.1
+21 silly currentTree   ├── read-pkg@1.1.0
+21 silly currentTree   ├── readable-stream@2.2.3
+21 silly currentTree   ├── readdirp@2.1.0
+21 silly currentTree   ├── regex-cache@0.4.3
+21 silly currentTree   ├── repeat-element@1.1.2
+21 silly currentTree   ├── repeat-string@1.6.1
+21 silly currentTree   ├── require-directory@2.1.1
+21 silly currentTree   ├── require-main-filename@1.0.1
+21 silly currentTree   ├── right-align@0.1.3
+21 silly currentTree   ├── ripemd160@1.0.1
+21 silly currentTree   ├── semver@5.3.0
+21 silly currentTree   ├── set-blocking@2.0.0
+21 silly currentTree   ├── set-immediate-shim@1.0.1
+21 silly currentTree   ├── setimmediate@1.0.5
+21 silly currentTree   ├── sha.js@2.4.8
+21 silly currentTree   ├── source-list-map@0.1.8
+21 silly currentTree   ├── source-map@0.5.6
+21 silly currentTree   ├── spdx-correct@1.0.2
+21 silly currentTree   ├── spdx-expression-parse@1.0.4
+21 silly currentTree   ├── spdx-license-ids@1.2.2
+21 silly currentTree   ├── stream-browserify@2.0.1
+21 silly currentTree   ├── stream-http@2.6.3
+21 silly currentTree   ├── string_decoder@0.10.31
+21 silly currentTree   ├── string-width@1.0.2
+21 silly currentTree   ├── strip-ansi@3.0.1
+21 silly currentTree   ├── strip-bom@2.0.0
+21 silly currentTree   ├── supports-color@3.2.3
+21 silly currentTree   ├── tapable@0.2.6
+21 silly currentTree   ├── timers-browserify@2.0.2
+21 silly currentTree   ├── to-arraybuffer@1.0.1
+21 silly currentTree   ├── tty-browserify@0.0.0
+21 silly currentTree   ├─┬ uglify-js@2.8.12
+21 silly currentTree   │ └── yargs@3.10.0
+21 silly currentTree   ├── uglify-to-browserify@1.0.2
+21 silly currentTree   ├─┬ url@0.11.0
+21 silly currentTree   │ └── punycode@1.3.2
+21 silly currentTree   ├── util-deprecate@1.0.2
+21 silly currentTree   ├─┬ util@0.10.3
+21 silly currentTree   │ └── inherits@2.0.1
+21 silly currentTree   ├── validate-npm-package-license@3.0.1
+21 silly currentTree   ├── vm-browserify@0.0.4
+21 silly currentTree   ├── watchpack@1.3.1
+21 silly currentTree   ├── webpack-sources@0.1.5
+21 silly currentTree   ├── which-module@1.0.0
+21 silly currentTree   ├── window-size@0.1.0
+21 silly currentTree   ├── wordwrap@0.0.2
+21 silly currentTree   ├── wrap-ansi@2.1.0
+21 silly currentTree   ├── xtend@4.0.1
+21 silly currentTree   ├── y18n@3.2.1
+21 silly currentTree   ├─┬ yargs-parser@4.2.1
+21 silly currentTree   │ └── camelcase@3.0.0
+21 silly currentTree   └─┬ yargs@6.6.0
+21 silly currentTree     ├── camelcase@3.0.0
+21 silly currentTree     └── cliui@3.2.0
+22 silly idealTree lib
+23 silly generateActionsToTake Starting
+24 silly install generateActionsToTake
+25 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/acorn
+26 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/ansi-regex
+27 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/arr-flatten
+28 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/arr-diff
+29 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/array-unique
+30 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/arrify
+31 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/async-each
+32 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/balanced-match
+33 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/base64-js
+34 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/big.js
+35 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/binary-extensions
+36 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/bn.js
+37 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/brorand
+38 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/buffer-shims
+39 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/buffer-xor
+40 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/builtin-modules
+41 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/builtin-status-codes
+42 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/camelcase
+43 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/co
+44 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/code-point-at
+45 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/concat-map
+46 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/brace-expansion
+47 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/constants-browserify
+48 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/core-util-is
+49 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/date-now
+50 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/console-browserify
+51 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/decamelize
+52 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/domain-browser
+53 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/emojis-list
+54 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/events
+55 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/filename-regex
+56 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/for-in
+57 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/for-own
+58 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/abbrev
+59 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/ansi-regex
+60 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/ansi-styles
+61 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/aproba
+62 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/asn1
+63 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/assert-plus
+64 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/asynckit
+65 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/aws-sign2
+66 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/aws4
+67 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/balanced-match
+68 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/buffer-shims
+69 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/caseless
+70 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/code-point-at
+71 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/concat-map
+72 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/brace-expansion
+73 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/console-control-strings
+74 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/core-util-is
+75 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/dashdash/node_modules/assert-plus
+76 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/dashdash
+77 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/deep-extend
+78 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/delayed-stream
+79 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/combined-stream
+80 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/delegates
+81 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/escape-string-regexp
+82 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/extend
+83 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/extsprintf
+84 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/forever-agent
+85 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/fs.realpath
+86 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/generate-function
+87 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/getpass/node_modules/assert-plus
+88 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/getpass
+89 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/graceful-fs
+90 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/graceful-readlink
+91 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/commander
+92 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/has-ansi
+93 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/has-unicode
+94 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/hoek
+95 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/boom
+96 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/cryptiles
+97 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/inherits
+98 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/block-stream
+99 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/ini
+100 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/is-property
+101 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/generate-object-property
+102 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/is-typedarray
+103 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/isarray
+104 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/isstream
+105 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/jsbn
+106 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/ecc-jsbn
+107 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/jodid25519
+108 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/json-schema
+109 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/json-stringify-safe
+110 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/jsonpointer
+111 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/mime-db
+112 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/mime-types
+113 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/form-data
+114 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/minimatch
+115 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/minimist
+116 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/mkdirp
+117 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/ms
+118 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/debug
+119 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/nopt
+120 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/number-is-nan
+121 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/is-fullwidth-code-point
+122 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/oauth-sign
+123 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/object-assign
+124 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/path-is-absolute
+125 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/pinkie
+126 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/pinkie-promise
+127 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/process-nextick-args
+128 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/punycode
+129 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/qs
+130 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/rc/node_modules/minimist
+131 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/semver
+132 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/set-blocking
+133 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/signal-exit
+134 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/sntp
+135 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/hawk
+136 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/sshpk/node_modules/assert-plus
+137 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/string_decoder
+138 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/stringstream
+139 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/strip-ansi
+140 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/string-width
+141 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/strip-json-comments
+142 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/rc
+143 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/supports-color
+144 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/chalk
+145 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tough-cookie
+146 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tunnel-agent
+147 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tweetnacl
+148 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/bcrypt-pbkdf
+149 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/sshpk
+150 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/uid-number
+151 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/util-deprecate
+152 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/readable-stream
+153 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/are-we-there-yet
+154 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tar-pack/node_modules/readable-stream
+155 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/uuid
+156 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/verror
+157 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/jsprim
+158 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/http-signature
+159 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/wide-align
+160 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/gauge
+161 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/npmlog
+162 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/wrappy
+163 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/once
+164 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/inflight
+165 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/glob
+166 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/rimraf
+167 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/fstream
+168 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/fstream-ignore
+169 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tar
+170 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tar-pack/node_modules/once
+171 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tar-pack
+172 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/xtend
+173 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/is-my-json-valid
+174 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/har-validator
+175 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/request
+176 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/node-pre-gyp
+177 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/get-caller-file
+178 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/graceful-fs
+179 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/has-flag
+180 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/hosted-git-info
+181 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/https-browserify
+182 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/ieee754
+183 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/indexof
+184 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/inherits
+185 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/cipher-base
+186 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/hash.js
+187 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/invert-kv
+188 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-arrayish
+189 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/error-ex
+190 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-binary-path
+191 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-buffer
+192 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-builtin-module
+193 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-dotfile
+194 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-extendable
+195 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-extglob
+196 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/extglob
+197 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-glob
+198 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/glob-parent
+199 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/glob-base
+200 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-posix-bracket
+201 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/expand-brackets
+202 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-primitive
+203 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-equal-shallow
+204 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-utf8
+205 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/isarray
+206 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/buffer
+207 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/isobject
+208 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/json5
+209 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/jsonify
+210 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/json-stable-stringify
+211 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/kind-of
+212 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-number
+213 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/lazy-cache
+214 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/lcid
+215 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/lodash
+216 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/async
+217 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/longest
+218 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/miller-rabin
+219 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/minimalistic-assert
+220 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/asn1.js
+221 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/des.js
+222 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/browserify-des
+223 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/minimalistic-crypto-utils
+224 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/hmac-drbg
+225 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/elliptic
+226 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/create-ecdh
+227 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/minimatch
+228 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/minimist
+229 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/nan
+230 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents
+231 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/normalize-path
+232 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/number-is-nan
+233 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/is-fullwidth-code-point
+234 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/object-assign
+235 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/object.omit
+236 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/os-browserify
+237 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/os-locale
+238 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/pako
+239 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/browserify-zlib
+240 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/parse-glob
+241 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/parse-json
+242 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/path-browserify
+243 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/path-is-absolute
+244 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/pify
+245 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/pinkie
+246 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/pinkie-promise
+247 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/path-exists
+248 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/find-up
+249 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/path-type
+250 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/preserve
+251 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/process
+252 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/process-nextick-args
+253 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/prr
+254 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/errno
+255 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/punycode
+256 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/querystring
+257 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/querystring-es3
+258 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/randomatic
+259 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/randombytes
+260 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/browserify-rsa
+261 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/diffie-hellman
+262 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/regex-cache
+263 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/repeat-element
+264 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/repeat-string
+265 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/align-text
+266 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/center-align
+267 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fill-range
+268 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/expand-range
+269 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/braces
+270 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/micromatch
+271 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/anymatch
+272 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/require-directory
+273 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/require-main-filename
+274 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/right-align
+275 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/ripemd160
+276 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/semver
+277 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/set-blocking
+278 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/set-immediate-shim
+279 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/setimmediate
+280 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/sha.js
+281 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/create-hash
+282 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/create-hmac
+283 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/pbkdf2
+284 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/evp_bytestokey
+285 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/browserify-aes
+286 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/browserify-cipher
+287 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/parse-asn1
+288 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/browserify-sign
+289 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/public-encrypt
+290 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/crypto-browserify
+291 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/source-list-map
+292 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/source-map
+293 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/spdx-expression-parse
+294 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/spdx-license-ids
+295 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/spdx-correct
+296 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/string_decoder
+297 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/strip-ansi
+298 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/string-width
+299 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/strip-bom
+300 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/load-json-file
+301 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/tapable
+302 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/timers-browserify
+303 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/to-arraybuffer
+304 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/tty-browserify
+305 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/uglify-to-browserify
+306 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/url/node_modules/punycode
+307 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/url
+308 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/util-deprecate
+309 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/readable-stream
+310 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/memory-fs
+311 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/readdirp
+312 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/chokidar
+313 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/stream-browserify
+314 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/util/node_modules/inherits
+315 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/util
+316 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/assert
+317 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/validate-npm-package-license
+318 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/normalize-package-data
+319 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/read-pkg
+320 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/read-pkg-up
+321 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/vm-browserify
+322 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/which-module
+323 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/window-size
+324 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/wordwrap
+325 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/cliui
+326 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/uglify-js/node_modules/yargs
+327 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/wrap-ansi
+328 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/xtend
+329 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/stream-http
+330 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/y18n
+331 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs-parser/node_modules/camelcase
+332 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs-parser
+333 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs/node_modules/camelcase
+334 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs/node_modules/cliui
+335 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/acorn-dynamic-import
+336 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/ajv
+337 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/ajv-keywords
+338 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/enhanced-resolve
+339 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/interpret
+340 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/json-loader
+341 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/loader-runner
+342 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/loader-utils
+343 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/mkdirp
+344 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/node-libs-browser
+345 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/supports-color
+346 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/uglify-js
+347 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/watchpack
+348 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/webpack-sources
+349 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs
+350 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack
+351 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules
+352 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules
+353 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/dashdash/node_modules
+354 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/getpass/node_modules
+355 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/rc/node_modules
+356 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/sshpk/node_modules
+357 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/fsevents/node_modules/tar-pack/node_modules
+358 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/url/node_modules
+359 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/util/node_modules
+360 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/uglify-js/node_modules
+361 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs-parser/node_modules
+362 warn checkPermissions Missing write access to /usr/local/lib/node_modules/webpack/node_modules/yargs/node_modules
+363 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+364 silly rollbackFailedOptional Starting
+365 silly rollbackFailedOptional Finishing
+366 silly runTopLevelLifecycles Finishing
+367 silly install printInstalled
+368 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules/webpack/node_modules/acorn'
+368 verbose stack     at Error (native)
+369 verbose cwd /Users/giovannifontana/prove/udemy/react2/auth/client
+370 error Darwin 16.4.0
+371 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "uninstall" "-g" "webpack"
+372 error node v6.9.5
+373 error npm  v3.10.10
+374 error path /usr/local/lib/node_modules/webpack/node_modules/acorn
+375 error code EACCES
+376 error errno -13
+377 error syscall access
+378 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules/webpack/node_modules/acorn'
+378 error     at Error (native)
+378 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules/webpack/node_modules/acorn'
+378 error     at Error (native)
+378 error   errno: -13,
+378 error   code: 'EACCES',
+378 error   syscall: 'access',
+378 error   path: '/usr/local/lib/node_modules/webpack/node_modules/acorn' }
+379 error Please try running this command again as root/Administrator.
+380 verbose exit [ -13, true ]
