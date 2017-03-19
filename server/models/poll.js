@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const pollSchema = new Schema({ //lowercase per trasformarlo in lowercase
     name: {type: String},
     options: {type: Array, default: []},
-    created_by: {type: String},
+    user: {type: String},
     timestamp: {type: Date, default: Date.now}
 });
 
