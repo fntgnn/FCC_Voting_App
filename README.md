@@ -1,2 +1,3 @@
-### Bundle for authentication.
-React, redux, jwt token, local strategy
+### FCC Voting App
+
+Created By: Giovanni Fontana

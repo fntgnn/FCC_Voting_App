@@ -4,7 +4,9 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const app = express();
-const router = require('./router');
+
+const index = require('./routes/index');
+const polls = require('./routes/polls');
 
 const cors = require('cors');
 
@@ -18,7 +20,9 @@ mongoose.connect('mongodb://localhost/voting');
 app.use(morgan('combined'));
 app.use(cors());    //CORS problem
 app.use(bodyParser.json({ type: '*/*' }));
-router(app);
+//router_index(app);
+app.use('/', index);
+app.use('/poll', polls);
 
 //Server setup
 const port = process.env.PORT || 3090;
