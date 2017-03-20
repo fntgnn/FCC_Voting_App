@@ -11,6 +11,7 @@ const requireAuth = passport.authenticate('jwt', { session: false });
 });*/
 
 router.get('/:poll', PollsController.getSinglePoll);
+router.post('/:poll', PollsController.votePoll);
 
 router.post('/new', requireAuth, PollsController.createPoll);
 

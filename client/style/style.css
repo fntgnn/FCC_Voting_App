@@ -1,3 +1,10 @@
+body{
+  color: red;
+}
 .error {
   color: 'red';
+}
+
+.btn_vote{
+  margin: 10px;
 }

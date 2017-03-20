@@ -35,3 +35,18 @@ exports.getSinglePoll = function(req, res, next){
       res.json(doc);
     });
 }
+
+exports.votePoll = function(req, res, next){
+  const id = mongoose.Types.ObjectId(req.params.poll);
+  const option = req.body.option;
+  //Need to do this http://stackoverflow.com/questions/13999232/increment-a-key-value-within-an-array-of-objects-with-mongodb-mongoose-driver
+  var update = {$inc: {}};
+  update.$inc['options.' + option + ".votes"] = 1;
+
+  Poll.update({_id: id}, update, function(err, updated){
+    if(err)
+      next(err);
+    res.json(updated);
+  });
+
+}
