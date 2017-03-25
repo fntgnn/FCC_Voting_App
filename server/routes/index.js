@@ -21,17 +21,3 @@ router.get('/profile', requireAuth, function(req, res){
 
 
 module.exports = router;
-/*module.exports = function(app){
-    app.get('/', requireAuth, function(req, res){
-          res.send({message: 'Super secret code is ABC123'})
-    })
-
-    app.post('/signin', requireSignin, Authentication.signin);
-    app.post('/signup', Authentication.signup);
-    app.post('/decode', Authentication.decode);
-
-    app.get('/profile', requireAuth, function(req, res){
-      res.send({message: 'authenticated'});
-    });
-
-}*/

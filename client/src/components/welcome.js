@@ -11,11 +11,11 @@ class Welcome extends Component {
   }
 
   renderPolls(){
-    if (!this.props.polls) return <div></div>;
-    const polls = this.props.polls.map(item => {
-      return <li key={item._id} className="list-group-item"><Link to={`poll/${item._id}`}>{item.name}</Link></li>;
+    if (!this.props.polls) return <li></li>;
+    const res = this.props.polls.map((item) => {
+      return <li key={item._id} className="list-group-item"><Link to={`/poll/${item._id}`}>{item.name}</Link></li>;
     });
-    return polls;
+    return res;
   }
 
   render(){

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { browserHistory } from 'react-router';
-import { FETCH_ALL_POLLS, FETCH_POLL, VOTE_POLL } from '../actions/types.js';
+import { FETCH_ALL_POLLS, FETCH_POLL, VOTE_POLL, CREATE_POLL } from '../actions/types.js';
 import config from '../../config';
 
 export function fetchAllPolls(){
@@ -33,4 +33,21 @@ export function votePoll(id, option){
     })
     .catch( error => console.log("error ",error));
   }
+}
+
+export function createPoll({ poll, user }){
+  const sendPoll = {poll, user};
+  return function(dispatch){
+    axios.post(`${config.db_uri}/poll/new`,
+        sendPoll,
+        {
+          headers: {authorization: localStorage.getItem('token')}
+        })
+    .then( response => {
+      dispatch({ type: CREATE_POLL });
+    })
+    .catch( error => console.log("error ",error));
+
+  }
+
 }

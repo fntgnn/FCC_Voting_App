@@ -7,42 +7,10 @@ import * as actions from '../actions/polls_actions';
 import { Pie } from 'react-chartjs-2';
 
 
-class Poll extends Component {
-
-  static contextTypes = {
-    router: PropTypes.object
-  }
-
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      option: 0
-    };
-  }
+class PollAfterVote extends Component {
 
   componentWillMount(){
     this.props.fetchPoll(this.props.params.id);
-  }
-
-  renderOptions(){
-    if (!this.props.poll || !this.props.poll.options) return <option></option>;
-    const options = this.props.poll.options.map((item, i) => {
-      return (<option key={i} value={i}> {item.option} </option>);
-    });
-    return options;
-  }
-
-  handleFormSubmit(event){
-    event.preventDefault();
-    this.props.votePoll(this.props.params.id, this.state.option);
-    browserHistory.push(`/poll/${this.props.params.id}/voted`);
-  }
-
-  onChangeHandler(event){
-    this.setState({
-      option: event.target.value
-    })
   }
 
   renderGraph(){
@@ -78,7 +46,7 @@ class Poll extends Component {
       };
 
       return (
-        <div>
+        <div className="text-center img-responsive">
            <Pie data={data} />
         </div>
       );
@@ -87,22 +55,14 @@ class Poll extends Component {
 
 
   render(){
-
     if(!this.props.poll) return <div></div>;
     const { poll } = this.props;
     return(
       <div className="text-center">
           <h2>{poll.name}</h2>
-
-
-          <form className="form-group" onSubmit={this.handleFormSubmit.bind(this)}>
-            <label>Select list:</label>
-            <select value={this.state.option} className="form-control" name="options" onChange={this.onChangeHandler.bind(this)}>
-              {this.renderOptions()}
-            </select>
-            <button className="btn btn-success" style={{margin: '5px'}} type="submit">Vote!</button>
-          </form>
-
+          <h3>Thank you for voting!</h3>
+          {this.renderGraph()}
+          <a href='/' className="btn btn-success">Back home</a>
       </div>
     );
   }
@@ -114,4 +74,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps, actions)(Poll);
+export default connect(mapStateToProps, actions)(PollAfterVote);

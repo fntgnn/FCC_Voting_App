@@ -8,3 +8,4 @@ export const FETCH_ALL_POLLS = 'fetch_all_polls';
 export const FETCH_POLL = 'fetch_poll';
 
 export const VOTE_POLL = 'vote_poll';
+export const CREATE_POLL = 'create_poll';

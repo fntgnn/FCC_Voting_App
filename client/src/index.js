@@ -14,6 +14,7 @@ import Signout from './components/auth/signout';
 import Signup from './components/auth/signup';
 import Profile from './components/profile';
 import Poll from './components/poll';
+import PollAfterVote from './components/poll-after-vote';
 
 import RequireAuth from './components/auth/require_auth';
 import reducers from './reducers';
@@ -23,8 +24,6 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
 //se aggiorno, mi fa il signout (quasi)
 const token = localStorage.getItem('token');
-
-
 
 //if we have a token, consider the user signed in
 if(token){
@@ -39,6 +38,7 @@ ReactDOM.render(
         <Route path="/" component={App} >
             <IndexRoute component={Welcome} />
             <Route path="poll/:id" component={Poll} />
+            <Route path="poll/:id/voted" component={PollAfterVote} />
             <Route path="signin" component={Signin} />
             <Route path="signup" component={Signup} />
             <Route path="signout" component={Signout} />

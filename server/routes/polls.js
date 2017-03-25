@@ -6,14 +6,15 @@ const passport = require('passport');
 const requireAuth = passport.authenticate('jwt', { session: false });
 
 
-/*router.get('/', requireAuth, function(req, res){
+router.get('/', requireAuth, function(req, res){
       res.json({message: 'poll'})
-});*/
+});
+
+router.post('/new', requireAuth, PollsController.createPoll);
 
 router.get('/:poll', PollsController.getSinglePoll);
 router.post('/:poll', PollsController.votePoll);
 
-router.post('/new', requireAuth, PollsController.createPoll);
 
 
 module.exports = router;
