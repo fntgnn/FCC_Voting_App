@@ -13,7 +13,7 @@ class Welcome extends Component {
   renderPolls(){
     if (!this.props.polls) return <li></li>;
     const res = this.props.polls.map((item) => {
-      return <li key={item._id} className="list-group-item"><Link to={`/poll/${item._id}`}>{item.name}</Link></li>;
+      return <li key={item._id} className="list-group-item"><Link to={`/poll/${item._id}`}>{item.name}</Link> <span className="pull-right"><Link to={`/poll/${item._id}/graph`}><i className="fa fa-pie-chart" aria-hidden="true"></i></Link></span></li>;
     });
     return res;
   }

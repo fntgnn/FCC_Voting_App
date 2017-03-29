@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as actions from '../../actions/polls_actions';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 
 class NewPoll extends Component{
 
@@ -17,7 +18,7 @@ class NewPoll extends Component{
 
   handleFormSubmit(event){
     event.preventDefault();
-    this.props.createPoll({ poll: this.state, user: this.props.user._id });
+    this.props.createPoll({ poll: this.state, user: this.props.user._id });    
   }
 
 
@@ -55,6 +56,11 @@ class NewPoll extends Component{
     return options;
   }
 
+  renderShare(){
+    if(this.props.polls)
+      browserHistory.push(`/poll/${this.props.polls._id}/share`);
+  }
+
   render(){
     return(
       <div className="text-center">
@@ -72,6 +78,7 @@ class NewPoll extends Component{
       <button type="submit" className="btn btn-success" onClick={this.handleFormSubmit.bind(this)}>Submit</button>
 
       </form>
+      {this.renderShare()}
       </div>
     );
   }
@@ -80,7 +87,8 @@ class NewPoll extends Component{
 
 function mapStateToProps(state){
   return{
-    user: state.auth.user
+    user: state.auth.user,
+    polls: state.polls.data
   }
 }
 

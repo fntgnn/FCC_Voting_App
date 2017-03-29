@@ -48,13 +48,13 @@ class Signup extends Component{
 
             <fieldset className="form-group">
             <label>Password:</label>
-            <input type="text" className="form-control" {...password}/>
+            <input type="password" className="form-control" {...password}/>
             {password.touched && password.error && <div className="error">{password.error}</div>}
             </fieldset>
 
             <fieldset className="form-group">
             <label>Confirm Password:</label>
-            <input type="text" className="form-control" {...passwordConfirm}/>
+            <input type="password" className="form-control" {...passwordConfirm}/>
             {passwordConfirm.touched && passwordConfirm.error && <div className="error">{passwordConfirm.error}</div>}
             </fieldset>
             {this.renderAlert()}

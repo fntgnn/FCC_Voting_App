@@ -9,8 +9,8 @@ class Header extends Component{
     renderLinks(){
       if(this.props.authenticated){
         return [
-          <li className="navbar-item" key={1}><Link className="nav-link" to="/settings"><i className="fa fa-cog" aria-hidden="true"></i></Link></li>,
-          <li className="navbar-item" key={2}><Link className="nav-link" to="/signout"> Sign Out</Link></li>
+          <li className="navbar-item" key={1}><Link className="nav-link" to="/profile">My profile</Link></li>,
+          <li className="navbar-item" key={3}><Link className="nav-link" to="/signout"> Sign Out</Link></li>
         ];
       } else {
         return [
@@ -24,7 +24,7 @@ class Header extends Component{
       return(
 
             <nav className="navbar navbar-light">
-            <Link to="/" className="navbar-brand">Voting App</Link>
+            <a href="/" className="navbar-brand">Voting App</a>
                 <ul className="nav navbar-nav pull-right">
                     {this.renderLinks()}
                 </ul>

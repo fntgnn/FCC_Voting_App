@@ -19,5 +19,7 @@ router.get('/profile', requireAuth, function(req, res){
   res.json({message: 'authenticated'});
 });
 
+router.get('/user/:id', PollsController.getUserPolls)
+
 
 module.exports = router;

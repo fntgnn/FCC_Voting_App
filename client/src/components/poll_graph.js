@@ -7,14 +7,14 @@ import * as actions from '../actions/polls_actions';
 import { Pie } from 'react-chartjs-2';
 
 
-class PollAfterVote extends Component {
+class PollGraph extends Component {
 
-  componentWillMount(){
+  componentDidMount(){
     this.props.fetchPoll(this.props.params.id);
   }
 
   renderGraph(){
-    if (!this.props.poll || !this.props.poll.options) return <option></option>;
+    if (!this.props.poll || !this.props.poll.options) return <div></div>;
     const labels = this.props.poll.options.map(item => {
       return item.option;
     });
@@ -23,7 +23,7 @@ class PollAfterVote extends Component {
     });
     var poolColors = function(a) {
           var pool = [];
-          for(var i=0;i<a;i++){
+          for(var i=0; i<a; i++){
               pool.push(dynamicColors());
           }
           return pool;
@@ -35,7 +35,6 @@ class PollAfterVote extends Component {
           var b = Math.floor(Math.random() * 255);
           return "rgb(" + r + "," + g + "," + b + ")";
       }
-    console.log(values);
     const data = {
       	labels: labels,
       	datasets: [{
@@ -60,7 +59,6 @@ class PollAfterVote extends Component {
     return(
       <div className="text-center">
           <h2>{poll.name}</h2>
-          <h3>Thank you for voting!</h3>
           {this.renderGraph()}
           <a href='/' className="btn btn-success">Back home</a>
       </div>
@@ -74,4 +72,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps, actions)(PollAfterVote);
+export default connect(mapStateToProps, actions)(PollGraph);

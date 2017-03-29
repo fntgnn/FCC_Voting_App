@@ -11,7 +11,10 @@ class Signout extends Component{
     render(){
 
         return (
-        <div>Sorry to se you go...</div>
+        <div className="jumbotron text-center">
+        <h1>Sorry to se you go...</h1>
+        <a href='/' className="btn btn-success">Back home</a>
+        </div>
         );
     }
 }
