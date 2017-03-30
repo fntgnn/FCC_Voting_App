@@ -1,3 +1,3 @@
 module.exports = {
-    db_uri: 'http://localhost:3090'
+    ROOT_URL: 'http://localhost:3090'
 }

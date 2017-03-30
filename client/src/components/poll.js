@@ -49,7 +49,6 @@ class Poll extends Component {
     if(this.state.custom === false)
       this.props.votePoll(this.props.params.id, this.state.option);
     else{
-      console.log("Boia can!");
       this.props.addCustomOption(this.props.params.id, this.state.customOption);
     }
     browserHistory.push(`/poll/${this.props.params.id}/voted`);

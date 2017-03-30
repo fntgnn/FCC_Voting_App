@@ -1,13 +1,13 @@
 import axios from 'axios';
 import { browserHistory } from 'react-router';
 import { AUTH_USER, GET_USER, UNAUTH_USER, AUTH_ERROR, FETCH_MESSAGE } from '../actions/types.js';
+import config from '../../config';
 
-const ROOT_URL = 'http://localhost:3090';
 
 
 export function signupUser({ name, email, password }){
   return function(dispatch){
-    axios.post(`${ROOT_URL}/signup`,{ name, email, password })
+    axios.post(`${config.ROOT_URL}/signup`,{ name, email, password })
     .then( response => {
       dispatch({ type: AUTH_USER });
       localStorage.setItem('token', response.data.token);
@@ -22,7 +22,7 @@ export function signinUser({ email, password }){
     return function(dispatch){
         //qui possiamo fare quello che vogliamo...chiamate asincrone ecc,... e poi chiamiamo il dispatch({type:'', payload:.......})
         //submit email/password to server
-    axios.post(`${ROOT_URL}/signin`,{ email, password })
+    axios.post(`${config.ROOT_URL}/signin`,{ email, password })
     .then( response =>{
         //ritorna il token...
         //If ok update state to indicated user authenticated, save the jwt token, redirect to feature
@@ -56,7 +56,7 @@ export function signoutUser(){
 
 export function fetchMessage() {
   return function(dispatch){
-    axios.get(ROOT_URL, {
+    axios.get(config.ROOT_URL, {
       headers: {authorization: localStorage.getItem('token')}
     })
     .then( response => {
@@ -70,7 +70,7 @@ export function fetchMessage() {
 
 export function getUserFromToken(){
   return function(dispatch){
-    axios.post(`${ROOT_URL}/decode`,{ token: localStorage.getItem('token')})
+    axios.post(`${config.ROOT_URL}/decode`,{ token: localStorage.getItem('token')})
     .then( response => {
       console.log("Resoponse: ", response);
       dispatch({ type: GET_USER, payload: response.data.user });

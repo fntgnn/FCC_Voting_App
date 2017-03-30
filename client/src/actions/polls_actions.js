@@ -5,7 +5,7 @@ import config from '../../config';
 
 export function fetchAllPolls(){
   return function(dispatch){
-    axios.get(config.db_uri)
+    axios.get(config.ROOT_URL)
     .then( response => {
       dispatch({ type: FETCH_ALL_POLLS, payload: response.data });
 
@@ -16,7 +16,7 @@ export function fetchAllPolls(){
 
 export function fetchPoll(id){
   return function(dispatch){
-    axios.get(`${config.db_uri}/poll/${id}`)
+    axios.get(`${config.ROOT_URL}/poll/${id}`)
     .then( response => {
       dispatch({ type: FETCH_POLL, payload: response.data });
 
@@ -28,7 +28,7 @@ export function fetchPoll(id){
 export function fetchUserPolls(user){
   return function(dispatch){
     const id = user._id;
-    axios.get(`${config.db_uri}/user/${id}`)
+    axios.get(`${config.ROOT_URL}/user/${id}`)
     .then( response => {
       dispatch({ type: FETCH_USER_POLLS, payload: response.data });
     })
@@ -38,7 +38,7 @@ export function fetchUserPolls(user){
 
 export function votePoll(id, option){
   return function(dispatch){
-    axios.post(`${config.db_uri}/poll/${id}`, { option })
+    axios.post(`${config.ROOT_URL}/poll/${id}`, { option })
     .then( response => {
       dispatch({ type: VOTE_POLL });
     })
@@ -49,7 +49,7 @@ export function votePoll(id, option){
 export function createPoll({ poll, user }){
   const sendPoll = {poll, user};
   return function(dispatch){
-    axios.post(`${config.db_uri}/poll/new`,
+    axios.post(`${config.ROOT_URL}/poll/new`,
         sendPoll,
         {
           headers: {authorization: localStorage.getItem('token')}
@@ -65,7 +65,7 @@ export function createPoll({ poll, user }){
 
 export function deletePoll(id){
   return function(dispatch){
-    axios.delete(`${config.db_uri}/poll/${id}`, {
+    axios.delete(`${config.ROOT_URL}/poll/${id}`, {
       headers: {authorization: localStorage.getItem('token')}
     })
       .then( response => {
@@ -77,7 +77,7 @@ export function deletePoll(id){
 
 export function addCustomOption(id, option){
   return function(dispatch){
-    axios.post(`${config.db_uri}/poll/${id}/custom`, { option }, {
+    axios.post(`${config.ROOT_URL}/poll/${id}/custom`, { option }, {
       headers: {authorization: localStorage.getItem('token')}
     })
       .then( response => {

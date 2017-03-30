@@ -9,10 +9,19 @@ const index = require('./routes/index');
 const polls = require('./routes/polls');
 
 const cors = require('cors');
+require('dotenv').config();
 
 //DB setup
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/voting');
+//mongoose.connect('mongodb://localhost/voting');
+mongoose.connect(process.env.DB_URI, function(err, res){
+    if(err){
+        console.log('DB CONNECTION FAILED '+err);
+    }
+    else{
+        console.log('DB CONNECTION SUCCESS');
+    }
+});
 
 
 //App setup

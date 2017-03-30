@@ -1,7 +1,8 @@
 const passport = require('passport');
 const User = require('../models/user');
 
-const config = require('../config');
+require('dotenv').config();
+//const config = require('../config'); //No because used dotenv.
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
@@ -14,11 +15,11 @@ const localLogin = new LocalStrategy(localOptions, function(email, password, don
     User.findOne({email: email}, function(err, user) {
         if(err) { return done(err); }
         if(!user) { return done(null, false); }
-        
+
         user.comparePassword(password, function(err, isMatch){
             if(err) { return done(err, null); }
             if(!isMatch) { return done(null, false); }
-            
+
             return done(null, user);
         });
     });
@@ -27,7 +28,7 @@ const localLogin = new LocalStrategy(localOptions, function(email, password, don
 //set option for strategy. Quando una richiesta arriva, guarda nel header che si chiama authorization
 const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader('authorization'),
-    secretOrKey: config.secret
+    secretOrKey: process.env.SECRET//config.secret
 };
 
 //create strategy
@@ -35,13 +36,13 @@ const jwtLogin = new JwtStrategy(jwtOptions, function(payload, done){
     //payload è il decoded jwtToken
     User.findById(payload.sub, function(err, user){
        if(err) { return done(err, false); }
-        
+
         if(user){
             done(null, user);
         } else {
             done(null, false);
         }
-        
+
     });
 });
 

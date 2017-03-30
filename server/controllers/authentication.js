@@ -1,10 +1,11 @@
 const jwt = require('jwt-simple');
-const config = require('../config');
+require('dotenv').config();
+//const config = require('../config');
 const User = require('../models/user');
 
 function tokenForUser(user){
     const timestamp = new Date().getTime(); //issued at time
-    return jwt.encode({ sub: user.id, iat: timestamp }, config.secret);
+    return jwt.encode({ sub: user.id, iat: timestamp }, process.env.SECRET);
 }
 
 exports.signup = function(req, res, next){
@@ -50,7 +51,7 @@ exports.signin = function(req, res, next){
 
 exports.decode = function(req, res, next){
   const token = req.body.token;
-  const id = jwt.decode(token, config.secret).sub;
+  const id = jwt.decode(token, process.env.SECRET).sub;
   User.findOne({_id: id}, function(err, user){
     if(err)
       return next(err);
